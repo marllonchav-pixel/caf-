@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cafeteria Euler</title>
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f3f0;
+    margin: 0;
+    color: #3e2f1c;
+  }
+  header {
+    background: #4a2c2a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  h1 { margin: 0; }
+  .slogan { font-style: italic; color: #e0c9a6; }
+  .coffee-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 30px;
+  }
+  .coffee-item {
+    background: #fff;
+    border: 2px solid #d2b48c;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .coffee-item:hover { box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+  .coffee-item img {
+    width: 100%;
+    height: 200px; /* altura uniforme */
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+  }
+  a {
+    text-decoration: none;
+    color: #3e2f1c;
+  }
+  footer {
+    background: #4a2c2a;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Cafeteria Euler</h1>
+    <p class="slogan">“O café que desperta”</p>
+  </header>
+
+  <section class="coffee-list">
+    <div class="coffee-item">
+      <a href="pagamento.html?produto=Espresso%20Clássico&valor=8.00">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBjoOZ3gTAjdR9GRXOBjKL7WDanyLgIE2YVVNNhWLreA&s=10" alt="Espresso Clássico">
+        <h3>Espresso Clássico</h3>
+        <p>R$ 8,00</p>
+      </a>
+    </div>
+
+    <div class="coffee-item">
+      <a href="pagamento.html?produto=Cappuccino%20Cremoso&valor=12.00">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNmMqi_f1QAoBZIBNP2AJfh9silbjLe0F04FioXfKoyQ&s=10" alt="Cappuccino Cremoso">
+        <h3>Cappuccino Cremoso</h3>
+        <p>R$ 12,00</p>
+      </a>
+    </div>
+
+    <div class="coffee-item">
+      <a href="pagamento.html?produto=Mocha%20com%20Chocolate&valor=14.00">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0V6m34_wz4V1gg1qU51F0p7Ru58JxuaEHdhmqKcLpSQ&s=10" alt="Mocha com Chocolate">
+        <h3>Mocha com Chocolate</h3>
+        <p>R$ 14,00</p>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Contato: (11) 96382-1603</p>
+    <p>Rua São Carlos, n°322, Nova Esperança - Manaus</p>
+  </footer>
+</body>
+</html>
